@@ -1,21 +1,25 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "The Breakfast Burger", 
+    "kCal": 250, 
+    "URLimage": "https://static.vecteezy.com/ti/gratis-foton/p2/47572652-frukost-skjutreglage-terar-mini-agg-smorgasar-med-bacon-och-cheddarost-ost-pa-reglaget-bullar-fotona.jpg",
+    "containsLactose": false, 
+    "containsGluten": false,
+    "ingredients": ["Crispy bacon + cheese", "Poached egg", "Replace bacon for salmon, +2$"]
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "The Lunch Burger", 
+    "kCal": 450, 
+    "URLimage": "https://eu-central-1.linodeobjects.com/tasteline/2015/09/ginas_burgare_med_pulled_chicken_och_coleslaw.jpg",
+    "containsLactose": true, 
+    "containsGluten": false,
+    "ingredients": ["Pulled chicken", "Fresh coleslaw and fries", "Dip for an extra 1$"]
+
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "The Dinner Burger", 
+    "kCal": 850, 
+    "URLimage": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/18/0e/8a/original-smash-burger.jpg?w=800&h=-1&s=1",
+    "containsLactose": true, 
+    "containsGluten": true,
+    "ingredients": ["Double patty w cheese", "Carmalized onion with BBQ-sauce", "Sweet-potato fries"]
 }]

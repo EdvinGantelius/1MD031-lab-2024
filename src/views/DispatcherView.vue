@@ -1,10 +1,16 @@
 <template>
     <div id="orders">
       <div id="orderList">
-        <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+        <div v-for="(order, key) in orders" v-bind:key="'order'+key" class="differentOrders">
+          <strong>#{{ key }}: <em>{{ order.orderItems }}</em></strong> <br>
+              <em style="margin-left: 20px;"> Full name: {{ order.fullName}}{{ ';' }}</em>
+              <p style="margin-left: 50px;" id="text-color"> 
+               - Gender: {{ order.gender }} <br>
+               - Email:  {{ order.email }}  <br>
+               - Payment Method: {{ order.paymentMethod }} <br> </p>
+              
         </div>
-        <button v-on:click="clearQueue">Clear Queue</button>
+        <button v-on:click="clearQueue" class="clearButton"> Clear Queue </button>
       </div>
       <div id="dots">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
@@ -12,7 +18,7 @@
           </div>
       </div>
     </div>
-  </template>
+</template>
   <script>
   import io from 'socket.io-client'
   const socket = io("localhost:3000");
@@ -48,7 +54,25 @@
     color:black;
     background: rgba(255,255,255, 0.5);
     padding: 1em;
+
+  .differentOrders {
+    border-bottom: 1px solid #4e4c4c;
+    padding: 5px;
   }
+
+  .clearButton {
+    margin-top: 20px;
+  }
+
+  .clearButton:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+  #text-color {
+    color: black;
+  }
+}
+
   #dots {
     position: relative;
     margin: 0;
